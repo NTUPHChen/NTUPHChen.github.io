@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Po-Han Chen | Ph.D. in Applied Mechanics</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <style>
+            /* 只讓「文章內容」裡的段落文字左右對齊，不影響首頁大標題 */
+            article p {
+                text-align: justify;
+            }
+            
+            /* 微調排序清單的間距與左右對齊 */
+            #publications ol li {
+                margin-bottom: 15px;
+                text-align: justify;
+            }
+
+            /* 首頁大頭貼的專屬設計 */
+            .avatar {
+                width: 180px;        /* 照片寬度 */
+                height: 180px;       /* 照片高度 */
+                border-radius: 50%;  /* 讓照片變成完美的圓形 */
+                object-fit: cover;   /* 確保照片比例正常，不會被拉扁 */
+                border: 3px solid white; /* 加上白色邊框增加質感 */
+                margin-bottom: 15px; /* 和下方名字保持一點距離 */
+            }
+
+            /* 修正首頁選單反白不置中的視覺誤差 */
+            #header nav ul li a {
+                text-indent: 0.2rem !important; /* 強制將文字向右推一點，抵銷右側字距 */
+            }
+
+            /* 研究區塊專業圖表的排版設計 */
+            .research-fig {
+                display: block;
+                margin: 0 auto 20px auto; /* 讓圖片完美置中，下方留點空隙 */
+                max-width: 90%; /* 讓圖片佔滿 90% 的寬度，保持兩側呼吸空間 */
+                border-radius: 8px; /* 加上微圓角 */
+                box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* 淡淡的陰影，讓圖片浮現出來 */
+            }
+        </style>
+    </head>
+    <body class="is-preload">
+
+        <div id="wrapper">
+
+                <header id="header">
+                        <div class="content">
+                            <div class="inner">
+                                <img src="images/profile.jpg" alt="Po-Han Chen" class="avatar" />
+                                <h1>Po-Han Chen (陳柏翰)</h1>
+                                <p>
+                                    Ph.D. in Applied Mechanics, National Taiwan University (NTU)<br />
+                                    M.S. in Mechanical Engineering, National Taiwan University (NTU)<br />
+                                    B.S. in Bio-Industrial Mechatronics Engineering, National Chung Hsing University (NCHU)
+                                </p>
+                            </div>
+                        </div>
+                        <nav>
+                            <ul>
+                                <li><a href="#about">About Me</a></li>
+                                <li><a href="#research">Research</a></li>
+                                <li><a href="#publications">Publications</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </header>
+
+                <div id="main">
+
+                        <article id="about">
+                                <h2 class="major">About Me</h2>
+                                <span class="image right"><img src="images/about.jpg" alt="Po-Han Chen" /></span>
+                                <p>I received the B.S. degree in Bio-Industrial Mechatronics Engineering from National Chung Hsing University (NCHU), Taichung, Taiwan, in 2019, and the M.S. and Ph.D. degrees from the Institute of Applied Mechanics, National Taiwan University (NTU), Taipei, Taiwan, in 2021 and 2026, respectively.</p>
+                                
+                                <p>My research focuses on smart manufacturing and the development of intelligent cyber-physical systems. Rooted in the solid mechatronics foundation established during my undergraduate studies at NCHU, my core expertise encompasses <strong>multi-modal sensor design, system control, and edge computing</strong>. By integrating advanced machine learning techniques with custom-designed embedded sensors, I aim to develop robust, real-time monitoring solutions for precision manufacturing, while exploring the broader integration of these intelligent technologies into modern biomechatronic applications.</p>
+                                
+                                <div style="clear:both; margin-bottom: 2em;"></div>
+
+                                <h3 class="major">Honors & Awards</h3>
+                                <ul>
+                                    <li>Honorary Member of The Phi Tau Phi Scholastic Honor Society (M.S., NTU, 2021)</li>
+                                    <li>Honorary Member of The Phi Tau Phi Scholastic Honor Society (B.S., NCHU, 2019)</li>
+                                </ul>
+                            </article>
+
+                        <article id="research">
+                                <h2 class="major">Research</h2>
+                                <p>My core research focuses on <strong>"Heterogeneous Edge Computing Systems for Precision Machining."</strong> Below are the main areas of my expertise:</p>
+
+                                <h3>1. Cyber-Physical Thermal Error Compensation in Sustainable Dry Milling</h3>
+                                <img src="images/research1.jpg]" alt="Thermal Error Compensation" class="research-fig" />
+                                <p>This study addresses the thermal drift challenges in sustainable dry milling, where the absence of coolant alters the thermal boundary conditions and concentrates heat at the tool-workpiece interface. By developing a hybrid sensing framework coupled with Ridge regression algorithms, a robust thermal error model was established. This approach effectively mitigates high-temperature thermal deformations, reducing machining errors by over 80%.</p>
+                                <hr />
+
+                                <h3>2. Physics-Informed Chatter Prediction and Stability Analysis</h3>
+                                <img src="images/research2.jpg" alt="Offline Chatter Prediction" class="research-fig" />
+                                <p>This study investigates the complex dynamics of machining chatter by developing a physics-informed, semi-empirical cutting force model. To enhance prediction accuracy, the model explicitly incorporates tool runout effects—a critical factor frequently overlooked in idealized simulations. The proposed methodology significantly improves the reliability of offline Stability Lobe Diagrams (SLDs), enabling the optimization of cutting parameters to prevent regenerative chatter prior to the machining process.</p>
+                                <hr />
+
+                                <h3>3. Edge-Enabled Real-Time Chatter Monitoring System</h3>
+                                <img src="images/research3.jpg" alt="Online Chatter Monitoring" class="research-fig" />
+                                <p>This study presents a deterministic, real-time chatter detection framework deployed on a lightweight edge computing platform (Raspberry Pi). To achieve millisecond-level responsiveness, a low-complexity Stability Index (SI) algorithm was derived and implemented. This localized edge architecture overcomes the latency constraints inherent in centralized CNC controllers, ensuring highly responsive and reliable process monitoring during machining operations.</p>
+                                <hr />
+
+                                <h3>4. In Situ Wireless Temperature Sensing Module</h3>
+                                <img src="images/research4.jpg" alt="Temperature Sensor Design" class="research-fig" />
+                                <p>This study focuses on overcoming the significant measurement lag associated with conventional spindle-mounted sensors. A custom wireless in situ temperature module was designed to directly capture the heat source at the tool tip. Utilizing a contact-based K-type thermocouple integrated with BLE transmission, the developed module provides the fast, high-fidelity thermal data essential for accurate, real-time error compensation in dry cutting environments.</p>
+                                <hr />
+
+                                <h3>5. Smart Vise for Dynamic Cutting Force Measurement</h3>
+                                <img src="images/research5.jpg" alt="Chatter Sensor Design" class="research-fig" />
+                                <p>This study explores the engineering of a low-cost, embedded "Smart Vise" capable of capturing high-frequency dynamic cutting forces. By integrating piezoelectric (PZT) sensors directly into the work-holding setup, this single-axis design effectively isolates chatter frequencies from static clamping forces. The proposed system offers a highly practical and cost-effective alternative to conventional, expensive multi-axis dynamometers for industrial applications.</p>
+                                <hr />
+
+                                <h3>6. Physical Acoustic Filtering via Helmholtz Resonator Arrays</h3>
+                                <img src="images/research6.jpg" alt="Physical Filtering using Helmholtz Resonator" class="research-fig" />
+                                <p>This study proposes a novel zero-power acoustic feature extraction mechanism utilizing a customized Helmholtz resonator array. By leveraging the physical resonance properties of the cavities, the system passively filters and amplifies specific frequency bands of interest before the signals reach the digital domain. This analog physical filtering approach significantly reduces the computational burden and power consumption of subsequent machine learning operations, paving the way for ultra-low-power intelligent acoustic sensors.</p>
+                                <div style="margin-bottom: 2em;"></div>
+
+                            </article>
+
+                        <article id="publications">
+                                <h2 class="major">Publications</h2>
+
+                                <h3 class="major">Journal Publications</h3>
+                                <ol>
+                                    <li><strong><u>P.-H. Chen</u></strong>, H.-Y. Kao, M.-Z. Wu, P.-Z. Chang, and W.-C. Li*, “Wireless In Situ Tool and Wired Structural Thermal Sensor Fusion for Robust Dry Milling Error Compensation,” IEEE Sensors Journal, (Accepted), 2026.</li>
+                                    <li><strong><u>P.-H. Chen</u></strong>, P.-Z. Chang, and W.-C. Li*, “A Milling Stability Monitoring System Based on a Dynamic Force-Sensing Vise,” IEEE Sensors Journal, vol. 25, no. 21, pp. 40525–40536, Nov 1 2025.</li>
+                                    <li><strong><u>P.-H. Chen</u></strong>, P.-Z. Chang, Y.-C. Hu, T.-L. Luo, C.-Y. Tsai, and W.-C. Li*, “On the robustness and generalization of thermal error models for CNC machine tools,” The International Journal of Advanced Manufacturing Technology, vol. 130, no. 3, pp. 1635–1651, Jan. 2024.</li>
+                                    <li>S.-Y. Lin, <strong><u>P.-H. Chen</u></strong>, P.-H. Hung, Y.-C. Hu, P.-Z. Chang, and W.-C. Li*, “Robust Tool Wear Modeling Based on Differential Wear Signature Analysis,” International Journal of Advanced Manufacturing Technology (IJAMT), vol. 141, pp. 4885-4894, Dec. 2025.</li>
+                                    <li>P.-H. Hung, <strong><u>P.-H. Chen</u></strong>, S.-Y. Lin, W.-T. Hsu, B.-H. Chou, P.-Z. Chang, and W.-C. Li*, “Comparative Analysis of Steel Mechanical Properties for Generalized Cutting Energy Prediction in CNC Machining,” International Journal of Advanced Manufacturing Technology (IJAMT), vol. 140, pp. 4179-4190, Sep. 2025.</li>
+                                </ol>
+
+                                <h3 class="major">Conference Publications</h3>
+                                <ol>
+                                    <li><strong><u>P.-H. Chen</u></strong>, T.-Y. Chen, S.-Y. Lin, P.-Z. Chang, T.-J. Lin, and W.-C. Li*, “Toward Zero-Power Feature Extraction for Speech Wakeup Using Helmholtz Resonator Array,” in the 23rd Int. Conf. on Solid-State Sensors & Actuators (TRANSDUCERS’25), Orlando, Florida, USA, Jun. 29-Jul. 3, 2025.</li>
+                                    <li>C.-Y. Hsu, <strong><u>P.-H. Chen</u></strong>*, T.-Y. Chen, S.-Y. Lin, T.-J. Lin, C.-W. Yeh, C.-J. Wang, W.-C. Li, and P.-Z. Chang, “Performance Evaluation of MEMS Vibration Sensors for Throat Microphones,” in IEEE SENSORS 2024, Kobe, Japan, Oct. 20-23, 2024, pp. 1-4.</li>
+                                    <li><strong><u>P.-H. Chen</u></strong>, S.-Y. Lin, T.-J. Lin, P.-Z. Chang, and W.-C. Li*, “Machining Stability Estimation Based on Semi-empirical Cutting Force Model Incorporating Machine Tool Runout Effects,” in the 57th CIRP Conf. on Manufacturing Systems (CIRP CMS'24), Póvoa de Varzim, Portugal, May 29- 31, 2024, pp. 1752-1757.</li>
+                                    <li><strong><u>P.-H. Chen</u></strong>, T.-J. Lin, C.-W. Yeh, P.-Z. Chang, and W.-C. Li*, “Force-Sensing Intelligent Vise for Cutting Dynamics Monitoring in Machining,” in IEEE SENSORS 2023, Vienna, Austria, Oct. 29-Nov. 1, 2023, pp. 1-4.</li>
+                                    <li>S.-Y. Lin, <strong><u>P.-H. Chen</u></strong>, T.-Y. Chen, P.-Z. Chang, and W.-C. Li*, “MEMS Microphone-Driven Near-Sensor Reservoir Computing for Lightweight Tool Wear Classification in Milling,” in the 23rd Int. Conf. on Solid-State Sensors & Actuators (TRANSDUCERS’25), Orlando, Florida, USA, Jun. 29-Jul. 3, 2025.</li>
+                                    <li>H.-C. Hsu, S.-Y. Lin, <strong><u>P.-H. Chen</u></strong>, P.-Z. Chang, and W.-C. Li*, “Multi-Modal Sensing for Enhanced Surface Roughness Prediction in CNC Machining Using an Intelligent Vise,” in IEEE SENSORS 2024, Kobe, Japan, Oct. 20-23, 2024, pp. 1-4.</li>
+                                    <li>C.-Y. Wang, <strong><u>P.-H. Chen</u></strong>, S.-Y. Lin, P.-Z. Chang, and Y.-C. Hu*, “Modelling Cutting Temperature and Tool Thermal Error in Dry Cutting under Different Cutting Parameters,” in the 57th CIRP Conf. on Manufacturing Systems (CIRP CMS'24), Póvoa de Varzim, Portugal, May 29- 31, 2024, pp. 1869-1874.</li>
+                                    <li>S.-Y. Lin, <strong><u>P.-H. Chen</u></strong>, T.-J. Lin, P.-Z. Chang, and W.-C. Li*, “Rapid Tool Wear Modelling for Varying Cutting Parameters,” in the 57th CIRP Conf. on Manufacturing Systems (CIRP CMS'24), Póvoa de Varzim, Portugal, May 29- 31, 2024, pp. 1770-1775.</li>
+                                    <li>W.-T. Hsu, P.-H. Hung, B.-H. Chou, <strong><u>P.-H. Chen</u></strong>, S.-Y. Lin, T.-J. Lin, Y.-C. Hu, P.-Z. Chang and W.-C. Li*, “Rapid Energy Consumption Modelling for CNC Based Milling Process,” in the 57th CIRP Conf. on Manufacturing Systems (CIRP CMS'24), Póvoa de Varzim, Portugal, May 29- 31, 2024, pp. 1764-1769.</li>
+                                </ol>
+                            </article>
+
+                        <article id="contact">
+                                <h2 class="major">Contact</h2>
+                                <p>Feel free to reach out to me for academic collaborations or inquiries.</p>
+                                <ul class="alt">
+                                    <li><strong>Email:</strong> <a href="mailto:phchen.ntuiam@gmail.com">phchen.ntuiam@gmail.com</a></li>
+                                </ul>
+                                
+                            </article>
+
+                    </div>
+
+                <footer id="footer">
+                        <p class="copyright">&copy; Po-Han Chen. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+                    </footer>
+
+            </div>
+
+        <div id="bg"></div>
+
+        <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
